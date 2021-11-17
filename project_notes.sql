@@ -45,6 +45,17 @@ CREATE TABLE `notes_category` (
    `cat_id` INT,
    PRIMARY KEY (`id`)
 );
+insert into `notes_category` ('notes_id', 'cat_id') values (1,2)
+insert into `notes_category` ('notes_id', 'cat_id') values (5,3)
+insert into `notes_category` ('notes_id', 'cat_id') values (7,4)
+insert into `notes_category` ('notes_id', 'cat_id') values (4,6)
+insert into `notes_category` ('notes_id', 'cat_id') values (2,7)
+insert into `notes_category` ('notes_id', 'cat_id') values (4,7)
+insert into `notes_category` ('notes_id', 'cat_id') values (3,9)
+insert into `notes_category` ('notes_id', 'cat_id') values (7,10)
+insert into `notes_category` ('notes_id', 'cat_id') values (10,4)
+insert into `notes_category` ('notes_id', 'cat_id') values (9,1)
+
 
 
 CREATE TABLE `notes` (
@@ -58,16 +69,16 @@ CREATE TABLE `notes` (
    `description` TEXT,
    PRIMARY KEY (`id`)
 );
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy,description) values (1, 4, 5, 'Terminar Proyecto individual', '2021-03-14', '2021-02-12', 1, 'aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (2, 5, 3, 'Completar tarea Trello', '2021-07-25', '2021-09-14', 1, 'dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (3, 6, 9, 'Vacunar a Mora 15/9', '2021-02-03', '2021-04-02', 1, 'pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (4, 4, 9, 'Pastel de papa', '2020-11-19', '2021-06-19', 0, 'metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (5, 4, 3, 'Libros para leer', '2021-09-25', '2021-07-18', 1, 'interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (6, 9, 7, 'Recordatorios varios', '2020-11-08', '2021-08-26', 1, 'ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (7, 5, 7, 'Lista de supermercado', '2021-08-01', '2021-09-27', 0, 'odio porttitor id consequat in consequat ut nulla sed accumsan');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (8, 5, 8, 'Pendientes', '2021-06-27', '2021-08-27', 0, 'vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (9, 1, 7, 'mauris vulputate elementum nullam', '2021-02-22', '2021-07-29', 1, 'nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante');
-insert into notes (id, user_id, cat_id, title, date_create, last_update, destroy, description) values (10, 2, 10, 'consequat nulla nisl', '2021-10-03', '2021-08-04', 1, 'ac consequat metus sapien ut nunc vestibulum ante ipsum primis in');
+insert into notes (id, user_id,title, date_create, last_update, destroy,description) values (1,5, 'Terminar Proyecto individual', '2021-03-14', '2021-02-12', 1, 'aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (2,3, 'Completar tarea Trello', '2021-07-25', '2021-09-14', 1, 'dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (3,9, 'Vacunar a Mora 15/9', '2021-02-03', '2021-04-02', 1, 'pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (4,9, 'Pastel de papa', '2020-11-19', '2021-06-19', 0, 'metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (5,3, 'Libros para leer', '2021-09-25', '2021-07-18', 1, 'interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (6,7, 'Recordatorios varios', '2020-11-08', '2021-08-26', 1, 'ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (7,7, 'Lista de supermercado', '2021-08-01', '2021-09-27', 0, 'odio porttitor id consequat in consequat ut nulla sed accumsan');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (8,8, 'Pendientes', '2021-06-27', '2021-08-27', 0, 'vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (9,7, 'mauris vulputate elementum nullam', '2021-02-22', '2021-07-29', 1, 'nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante');
+insert into notes (id, user_id,title, date_create, last_update, destroy, description) values (10,10, 'consequat nulla nisl', '2021-10-03', '2021-08-04', 1, 'ac consequat metus sapien ut nunc vestibulum ante ipsum primis in');
 
 
 
