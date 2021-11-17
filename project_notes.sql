@@ -45,16 +45,15 @@ CREATE TABLE `notes_category` (
    `cat_id` INT,
    PRIMARY KEY (`id`)
 );
-insert into `notes_category` ('notes_id', 'cat_id') values (1,2)
-insert into `notes_category` ('notes_id', 'cat_id') values (5,3)
-insert into `notes_category` ('notes_id', 'cat_id') values (7,4)
-insert into `notes_category` ('notes_id', 'cat_id') values (4,6)
-insert into `notes_category` ('notes_id', 'cat_id') values (2,7)
-insert into `notes_category` ('notes_id', 'cat_id') values (4,7)
-insert into `notes_category` ('notes_id', 'cat_id') values (3,9)
-insert into `notes_category` ('notes_id', 'cat_id') values (7,10)
-insert into `notes_category` ('notes_id', 'cat_id') values (10,4)
-insert into `notes_category` ('notes_id', 'cat_id') values (9,1)
+insert into notes_category (notes_id, cat_id) values (1,2);
+insert into notes_category (notes_id, cat_id) values (5,3);
+insert into notes_category (notes_id, cat_id) values (4,6);
+insert into notes_category (notes_id, cat_id) values (2,7);
+insert into notes_category (notes_id, cat_id) values (4,7);
+insert into notes_category (notes_id, cat_id) values (3,9);
+insert into notes_category (notes_id, cat_id) values (7,10);
+insert into notes_category (notes_id, cat_id) values (10,4);
+insert into notes_category (notes_id, cat_id) values (9,1);
 
 
 
